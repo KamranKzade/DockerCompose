@@ -19,3 +19,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
+// docker compose stop  -- > calisan containeri dayandiririq 
+// docker compose rm    -- > calismayan containerleri silmek ucun istifade edirik
