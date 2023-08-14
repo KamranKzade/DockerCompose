@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  microservice1.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5000:80"
+  microservice2.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5010:80"
