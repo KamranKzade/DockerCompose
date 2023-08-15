@@ -12,6 +12,8 @@ namespace MicroService1.API.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private static int _counter = 0;
+
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
@@ -28,6 +30,13 @@ namespace MicroService1.API.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpPost]
+        public IActionResult Post()
+        {
+            _counter++;
+            return Ok(_counter);
         }
     }
 }
