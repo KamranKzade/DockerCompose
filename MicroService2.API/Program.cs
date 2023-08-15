@@ -36,3 +36,5 @@ app.Run();
 // docker compose unpause -- > Containerde olan microservicelerin pause-da olanlarinin isini
 //                             davam etdirmek ucun istifade olunur ve istifade olunan datalarla
 //                             isleyirik ( Memory-de olan datalarla isleyirik ).
+// docker compose exec    -- > Containerin icerisinde olan microservice-lerden 1-inin icerisine
+//                             daxil olub, istediyimiz yere gede bilerik. Mes. appsetting file ve s.
