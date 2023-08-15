@@ -1,6 +1,8 @@
 version: '3.4'
 
 services:  
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
   microservice1.api:
     image: kamrankzade/microservice1:${version}
     # 1dene inistance ayaga qaldiran zaman ad veririk, 1+ fazla inistance ayaga qaldirarda compose ozu verir adlari
@@ -15,3 +17,5 @@ services:
     build:
       context: .
       dockerfile: MicroService2.API/Dockerfile
+volumes:
+  sqlserver_volume :
