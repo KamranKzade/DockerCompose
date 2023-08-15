@@ -3,13 +3,15 @@ version: '3.4'
 services:  
   microservice1.api:
     image: microservice1-image
-    container_name: microservice1-container
+    # 1dene inistance ayaga qaldiran zaman ad veririk, 1+ fazla inistance ayaga qaldirarda compose ozu verir adlari
+    #container_name: microservice1-container
     build:
       context: .
       dockerfile: MicroService1.API/Dockerfile
   microservice2.api:
     image: microservice2-image
-    container_name: microservice2-container
+    # 1dene inistance ayaga qaldiran zaman ad veririk, 1+ fazla inistance ayaga qaldirarda compose ozu verir adlari
+    #container_name: microservice2-container
     build:
       context: .
       dockerfile: MicroService2.API/Dockerfile

@@ -5,9 +5,25 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - "5000:80"
+      # yalniz 1 inistance yaradan zaman bele veririk
+      # - "5000:80"
+
+      # 1+ fazla inistance yaradan zaman 2 cur vere bilerik
+      # 1. Bu halda ise araliq verib deye bilerik ki, bu araliqda olan portlari 80 ile bagla.
+      #    Bele olan halda problem yarana bilerki, portu ozu random alir deye eyni portlari ala biler
+      # - "5000-5100:80"
+      # 2. "80" --> bele olanda ozu bos olan portlari 80 portu ile baglayir
+      - "80"
   microservice2.api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - "5010:80"
+      # yalniz 1 inistance yaradan zaman bele veririk
+      # - "5000:80"
+
+      # 1+ fazla inistance yaradan zaman 2 cur vere bilerik
+      # 1. Bu halda ise araliq verib deye bilerik ki, bu araliqda olan portlari 80 ile bagla.
+      #    Bele olan halda problem yarana bilerki, portu ozu random alir deye eyni portlari ala biler
+      # - "5000-5100:80"
+      # 2. "80" --> bele olanda ozu bos olan portlari 80 portu ile baglayir
+      - "80"
