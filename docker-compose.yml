@@ -2,16 +2,16 @@ version: '3.4'
 
 services:  
   microservice1.api:
-    image: microservice1-image
+    image: kamrankzade/microservice1:${version}
     # 1dene inistance ayaga qaldiran zaman ad veririk, 1+ fazla inistance ayaga qaldirarda compose ozu verir adlari
-    #container_name: microservice1-container
+    container_name: microservice1-container
     build:
       context: .
       dockerfile: MicroService1.API/Dockerfile
   microservice2.api:
-    image: microservice2-image
+    image: kamrankzade/microservice2:${version}
     # 1dene inistance ayaga qaldiran zaman ad veririk, 1+ fazla inistance ayaga qaldirarda compose ozu verir adlari
-    #container_name: microservice2-container
+    container_name: microservice2-container
     build:
       context: .
       dockerfile: MicroService2.API/Dockerfile
