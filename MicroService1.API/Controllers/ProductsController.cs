@@ -1,5 +1,4 @@
 ﻿using MicroService1.API.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicroService1.API.Controllers;
@@ -21,7 +20,6 @@ public class ProductsController : ControllerBase
     public async Task<IActionResult> Get()
     {
         var httpClient = new HttpClient();
-
         var response = await httpClient.GetAsync($"{_configuration.GetSection("Microservices")["baseUrlMicroservice2"]}/api/products");
 
         var context = await response.Content.ReadAsStringAsync();
