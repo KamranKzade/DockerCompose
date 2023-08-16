@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroService1.API", "MicroService1.API\MicroService1.API.csproj", "{B7FA60F5-4873-46CF-B20A-039140A35E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService1.API", "MicroService1.API\MicroService1.API.csproj", "{B7FA60F5-4873-46CF-B20A-039140A35E98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroService2.API", "MicroService2.API\MicroService2.API.csproj", "{B363ED19-0942-4BD0-9F42-57A0F2681957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService2.API", "MicroService2.API\MicroService2.API.csproj", "{B363ED19-0942-4BD0-9F42-57A0F2681957}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{41B24A58-F9DA-4CFD-9ADA-6DCF9809894C}"
 EndProject
