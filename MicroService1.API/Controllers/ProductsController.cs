@@ -27,7 +27,6 @@ public class ProductsController : ControllerBase
         return Ok(context);
     }
 
-
     [HttpPost]
     public IActionResult Save()
     {
