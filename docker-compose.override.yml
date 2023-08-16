@@ -11,7 +11,7 @@ services:
       - "1433:1433"
   microservice1.api:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
     ports:
       # yalniz 1 inistance yaradan zaman bele veririk
       - "5000:80"
@@ -24,7 +24,7 @@ services:
       # - "80"
   microservice2.api:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
     ports:
       # yalniz 1 inistance yaradan zaman bele veririk
       - "5010:80"
